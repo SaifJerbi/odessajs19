@@ -1,6 +1,6 @@
 {
   "name": "odessajs19-platform-demo",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "core platform for Pluggable web application using Angular workshop",
   "main": "index.js",
   "author": "Saif Jerbi",
@@ -26,16 +26,16 @@
     "@angular/platform-browser": "~8.1.2",
     "@angular/platform-browser-dynamic": "~8.1.2",
     "@angular/router": "~8.1.2",
-    "odessajs19-plg-platform-shared-api": "^1.0.0",
     "@types/express": "^4.17.0",
     "bootstrap": "^4.3.1",
     "inversify": "^5.0.1",
     "inversify-express-utils": "^6.3.2",
+    "odessajs19-plg-platform-shared-api": "^1.0.0",
+    "reflect-metadata": "0.1.12",
     "rxjs": "~6.4.0",
     "systemjs": "0.21.3",
     "tslib": "^1.9.0",
-    "zone.js": "~0.9.1",
-    "reflect-metadata": "0.1.12"
+    "zone.js": "~0.9.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.801.2",

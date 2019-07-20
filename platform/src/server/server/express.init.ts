@@ -13,6 +13,8 @@ import { YarnCli } from '../core-api-impl/modules/yarn-cli';
 import { Container } from 'inversify';
 import { DependencyInjector } from '../ioc/dependency-injector';
 import { PluginsHandler } from '../core-api-impl/plugins-handler.api';
+import { DataApi } from 'odessajs19-plg-platform-shared-api/shared/data.api';
+import { DataServerApi } from '../core-api-impl/data.api';
 
 const CLIENT_PATH = join(__dirname, '../../client');
 const IoCContainer = new Container();
@@ -23,6 +25,7 @@ export let initServer = (): Observable<express.Application> => {
   IoCContainer.bind<PluginsHandler>(CORE_TYPES.PluginsHandler).to(
     PluginsHandler
   );
+  IoCContainer.bind<DataApi>(CORE_TYPES.DataServerApi).to(DataServerApi);
 
   if (IoCContainer.isBound(CORE_TYPES.ExpressServerInstance)) {
     const logger: LoggerApi = IoCContainer.get(TYPES.LoggerApi);
