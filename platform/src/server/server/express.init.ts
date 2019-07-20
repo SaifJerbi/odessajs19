@@ -5,8 +5,8 @@ import { Observable, of } from 'rxjs';
 import { InversifyExpressServer } from 'inversify-express-utils';
 import { urlencoded, json } from 'body-parser';
 import { join } from 'path';
-import { TYPES } from '@sejerbi/shared-api/server/types';
-import { LoggerApi } from '@sejerbi/shared-api/server';
+import { TYPES } from 'odessajs19-plg-platform-shared-api/server/types';
+import { LoggerApi } from 'odessajs19-plg-platform-shared-api/server';
 
 import { CORE_TYPES } from '../ioc/core-types';
 import { YarnCli } from '../core-api-impl/modules/yarn-cli';
