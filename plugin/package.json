@@ -1,6 +1,6 @@
 {
   "name": "odessajs19-plugin-img",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "keywords": [
     "odessajs-pluggable-app",
     "plugin",
@@ -9,7 +9,7 @@
   ],
   "title": "My First Plugin",
   "description": "A demo extension for the platform",
-  "entryPointFile": "client/bundles/odessajs19-plugin-demo.umd.js",
+  "entryPointFile": "client/bundles/odessajs19-plugin-img.umd.js",
   "entryPointModule": "MyPluginModule",
   "entryPointCmp": "app-my-plugin",
   "scripts": {
