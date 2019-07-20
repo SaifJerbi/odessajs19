@@ -1,0 +1,65 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="mx-auto" style="width: 400px">
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <img
+            src="assets/logo.svg"
+            alt="OdessaJS logo"
+            class="img-logo"
+            width="50px"
+          />
+          <a
+            class="navbar-brand"
+            href="#"
+            style="margin-left: 20px;color: #c7121f"
+            >OdessaJS'2019</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navbar content -->
+
+<div class="container-fluid">
+  <div class="col-4" style="float: left;">
+    <div class="list-group" *ngIf="search$ | async as data">
+      <span class="badge badge-info">{{ data.total }}</span>
+      <div
+        class="list-group-item list-group-item-action flex-column align-items-start"
+        *ngFor="let plugin of data.objects"
+      >
+        <div>
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">
+              {{ plugin.package?.name }} -- {{ plugin.package?.version }}
+            </h5>
+            <small> {{ plugin.package?.date | date: short }}</small>
+          </div>
+          <p class="mb-1">
+            {{ plugin.package?.description }}
+          </p>
+          <small> {{ plugin.package?.author?.name }}</small>
+          <span style="float: right;">
+            <span
+              class="badge badge-pill badge-primary "
+              style="cursor: pointer"
+              (click)="doInstallPlugin(plugin)"
+              >Install</span
+            ><span
+              class="badge badge-pill badge-secondary "
+              style="cursor: pointer"
+              (click)="doLoadPlugin(plugin)"
+              >Load</span
+            >
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-8" style="float: right;">
+    <app-container></app-container>
+  </div>
+</div>

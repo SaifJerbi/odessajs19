@@ -1,0 +1,21 @@
+{
+  "name": "@sejerbi/shared-api",
+  "version": "1.0.2",
+  "description": "Shared API for Pluggable web application using Angular workshop",
+  "scripts": {
+    "build": "tsc && cp package.json ./dist"
+  },
+  "main": "index.js",
+  "author": "Saif Jerbi",
+  "license": "MIT",
+  "devDependencies": {
+    "inversify": "^4.13.0",
+    "rxjs": "^5.5.8",
+    "ts-node": "^6.0.2",
+    "tslint": "^5.9.1",
+    "typescript": "~2.7.2"
+  },
+  "dependencies": {
+    "gts": "^0.5.4"
+  }
+}

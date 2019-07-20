@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2015",
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist/server",
+    "baseUrl": "src/server",
+    "typeRoots": ["node_modules/@types"],
+    "paths": {
+      "*": ["node_modules/*"]
+    },
+    "lib": ["es6", "dom"],
+    "types": ["reflect-metadata"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "compileOnSave": false,
+  "include": ["src/server/**/*", "src/index.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
