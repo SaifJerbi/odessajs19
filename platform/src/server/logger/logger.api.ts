@@ -1,5 +1,5 @@
 import { injectable } from 'inversify';
-import { LoggerApi } from '@sejerbi/shared-api/server';
+import { LoggerApi } from 'odessajs19-plg-platform-shared-api/server';
 
 const defaultLevel = process.env.LOG_LEVEL;
 
