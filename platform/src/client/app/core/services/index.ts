@@ -1,1 +1,1 @@
-export * from './modules-loader.service';
+export * from './plugin-handler.service';

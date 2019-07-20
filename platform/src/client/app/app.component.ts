@@ -23,10 +23,6 @@ export class AppComponent implements OnInit {
     );
   }
 
-  doLoadPlugin(plugin: any): void {
-    this.plugins.next(plugin.package);
-  }
-
   doInstallPlugin(plugin: any): void {
     this.pluginsHandler.install(plugin).subscribe(installed => {
       if (installed) {
