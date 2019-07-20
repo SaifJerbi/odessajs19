@@ -1,6 +1,6 @@
 {
   "name": "odessajs19-plg-platform-shared-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shared API for Pluggable web application using Angular workshop",
   "scripts": {
     "build": "tsc && cp package.json ./dist"
@@ -10,10 +10,9 @@
   "license": "MIT",
   "devDependencies": {
     "inversify": "^4.13.0",
-    "rxjs": "^5.5.8",
-    "ts-node": "^6.0.2",
-    "tslint": "^5.9.1",
-    "typescript": "~2.7.2"
+    "rxjs": "~6.4.0",
+    "ts-node": "~7.0.0",
+    "typescript": "~3.4.3"
   },
   "dependencies": {
     "gts": "^0.5.4"
