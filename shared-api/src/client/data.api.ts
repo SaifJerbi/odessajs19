@@ -1,4 +1,4 @@
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { Product } from '../shared/models';
 import { DataApi } from '../shared/data.api';
 
