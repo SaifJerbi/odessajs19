@@ -1,6 +1,6 @@
 {
   "name": "odessajs19-plugin-img",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "keywords": [
     "odessajs-pluggable-app",
     "plugin",
@@ -11,7 +11,7 @@
   "description": "A demo extension for the platform",
   "entryPointFile": "client/bundles/odessajs19-plugin-img.umd.js",
   "entryPointModule": "MyPluginModule",
-  "entryPointCmp": "app-my-plugin",
+  "entryPointCmp": "app-my-custom-widget",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
