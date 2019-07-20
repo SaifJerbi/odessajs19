@@ -1,6 +1,6 @@
 {
-  "name": "@sejerbi/platform",
-  "version": "1.0.2",
+  "name": "odessajs19-plg-platform-demo",
+  "version": "1.0.0",
   "description": "core platform for Pluggable web application using Angular workshop",
   "main": "index.js",
   "author": "Saif Jerbi",
@@ -12,9 +12,10 @@
     "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"cyan.bold,green.bold\" \"npm run watch:server\" \"npm run watch:node\"",
     "watch:node": "nodemon dist/server/server.js",
     "watch:server": "tsc -w -p tsconfig.server.json",
-    "build": "yarn build:client && yarn build:server",
+    "build": "yarn build:client && yarn build:server  && yarn copy-package",
     "build:client": "ng build",
-    "build:server": "tsc -p tsconfig.server.json"
+    "build:server": "tsc -p tsconfig.server.json",
+    "copy-package": "cp package.json ./dist"
   },
   "dependencies": {
     "@angular/animations": "~8.1.2",
