@@ -1,5 +1,5 @@
 {
-  "name": "odessajs19-plg-platform-demo",
+  "name": "odessajs19-platform-demo",
   "version": "1.0.0",
   "description": "core platform for Pluggable web application using Angular workshop",
   "main": "index.js",
