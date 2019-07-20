@@ -1,6 +1,6 @@
 {
-  "name": "@sejerbi/shared-api",
-  "version": "1.0.2",
+  "name": "odessajs19-plg-platform-shared-api",
+  "version": "1.0.0",
   "description": "Shared API for Pluggable web application using Angular workshop",
   "scripts": {
     "build": "tsc && cp package.json ./dist"
